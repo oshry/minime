@@ -1,0 +1,12 @@
+div#wrapper { width: 975px !important; padding-left: 14px }
+div#header h1 { margin-left: 25px !important; display: inline }
+div#nav { display: inline }
+div#navtop { display: inline }
+div#content { width: 676px !important; display: inline }
+div#content div.box.property.featured div.inner img { display: inline !important }
+div#content div.box.property.featured div.inner h4 { float: none }
+div#content div.box.property.featured div.inner p { display: inline }
+div#content div.box.property.featured div.inner ul { display: inline; padding-left: 15px }
+div#content div.box.property.featured div.inner a { display: inline }
+div#panel { width: 284px !important; display: inline }
+body div#footer ul { display: inline; padding-bottom: 24px !important }

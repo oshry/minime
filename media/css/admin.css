@@ -1,0 +1,192 @@
+/**
+ * disabling inherited styles from site
+ *
+ */
+
+div#content { width: 900px; min-height: 500px; border: 1px solid #aeaeae; background-color: #fff; margin: 15px 15px 15px 0; padding: 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px }
+div#content h1 { padding: 3px 0 }
+div#content h2 { padding: 3px 0; margin: 0 }
+
+/**
+ * grid
+ *
+ */
+
+.panel-1 { float: left; width: 12%; min-height: 490px; padding: 5px 10px 5px 0; margin-right: 10px; border-right: 1px solid #ccc }
+.panel-2 { float: left; width: 84%; padding: 5px }
+.panel-2 .box { float: left; width: 110px; -moz-border-radius: 14px; -webkit-border-radius: 14px; padding: 18px 25px;
+					margin: 0 0px 20px 20px; border: 1px solid #ccc; background: #f9f9f9 url(../img/layout/admin_box_bg.gif) repeat-x 0 0 }
+div#content .panel-2 .box h2 { padding: 0 }
+.panel-2 .box-2 { width: 90%; height: 200px; -moz-border-radius: 8px; -webkit-border-radius: 8px; padding: 10px 20px 30px;
+					margin: 0 0 0 15px; border: 1px solid #ccc; background: #f9f9f9 url(../img/layout/admin_box_bg.gif) repeat-x 0 0 }
+.panel-2 .box-2 a { color: #354774 }
+.panel-2 .box-2 span.tag { color: #888; margin-right: 5px }
+
+/**
+ * main elements
+ *
+ */
+
+.panel-1 ul { padding: 0; margin: 2px 0 20px 0; list-style: none }
+.panel-1 ul li { padding: 0; margin: 5px }
+.panel-1 ul li a { text-decoration: none }
+.panel-1 ul li a img { vertical-align: middle }
+.panel-1 ul li a:hover { text-decoration: underline }
+p { margin: 0; padding: 5px 0 }
+
+/**
+ * forms
+ *
+ */
+
+form { padding: 0; margin: 0 }
+form fieldset { clear: both; padding: 3px; margin: 5px }
+	fieldset legend { padding: 0 3px }
+
+form div.line {
+	clear: left;
+	float: left;
+	width: 99%;
+	margin: 0 0 1px; 
+	padding: 5px 3px 5px 8px;
+	line-height: 120%; 
+	border-top: 1px solid #ddd; 
+	border-bottom: 1px solid #eee; 
+	background-color: #FAFAFA
+}
+	form div.line:hover { background-color: #EBF2F6 }
+	form div.line.focused { background-color: #EBF2F6 }
+	form div.line.checkbox label,
+	form div.line label { clear: both; float: left; width: 125px; font-weight: bolder; line-height: 160%; margin: 0; padding: 0 }
+	form div.line label.inline { clear: both; float: none; width: auto; font-weight: normal; line-height: 160% }
+	form div.line input { width: 200px; padding: 2px }
+	form div.line input.date.day { width: 20px }
+	form div.line input.date.month { width: 20px }
+	form div.line input.numeric,
+	form div.line input.money { width: 100px; text-align: right }
+	form div.line select { width: 205px; padding: 2px }
+	form div.line textarea { width: 300px; height: 100px }
+	form div.controls { padding: 0 0 5px; margin-bottom: 10px; border-bottom: 1px solid #adadad }
+	form div.controls button { float: right; padding: 0 5px }
+
+	form.filter fieldset { margin: 0 0 8px; padding: 8px; background-color: #EFFFEC; border-bottom: 1px solid #C2F9B7 }
+	form.filter legend { background-color: #fff; padding: 0 5px 2px; border-bottom: 1px solid #C2F9B7; font-size: 11px; color: #888; cursor: default }
+	form.filter div.line { clear: none; float: left; width: auto; margin: 0 5px 0 0; padding: 0; border: 0; background: none } 
+	form.filter div.line label { float: left; width: auto; padding: 0 5px 0 0; margin: 0; line-height: 22px } 
+	form.filter div.line input { float: left; width: 100px } 
+	form.filter div.line input[type=radio] { margin-left: 10px } 
+	form.filter div.controls { clear: none; float: left; width: auto; padding: 0; margin: 0; border: 0; } 
+	form.filter div.controls button { cursor: pointer; padding: 0 2px; line-height: 17px } 
+
+	form.filter.bulk fieldset { background-color: #D1E8FF; border-color: #66AEF6; padding: 3px 8px 5px }
+	form.filter.bulk fieldset legend { border-color: #D1E8FF }
+	form.filter.bulk fieldset div.line input { float: none; width: auto }
+	form.filter.bulk fieldset div.line label { float: none }
+	form.filter.bulk fieldset div.controls button { margin-left: 10px }
+	
+	form div.line ul.checkboxes { clear: right; margin-right: 100px /* equal to input width */ }
+	form div.line ul.checkboxes li { float: right; width: 160px; padding: 5px; margin: 0; list-style: none }
+	form div.line.checkbox input { float: none; width: auto; margin: 4px 0; padding: 0 }
+	form div.line ul.checkboxes li input { width: 10px; margin: 0; padding: 0; line-height: 100% }
+	form div.line ul.checkboxes li label { width: auto; margin: 0; padding: 0 8px 0 0; line-height: 100%; font-weight: normal }
+
+	form fieldset div.i18n div.line label { width: 115px; margin-left: 10px; font-weight: normal }
+
+/**
+ * tables
+ *
+ */
+
+table.admin { clear: both; width: 100%; border: 0; margin: 0; float: none; border-right: 1px solid #ddd; cursor: default }
+	table.admin thead td { padding: 7px 5px; color: #454545; border-left: 1px solid #fff; border-bottom: 1px solid #bebebe; font-size: 9px; text-transform: uppercase; font-weight: bolder; background: #eaeaea url(../img/layout/table_thead.gif) repeat-x 0 0 }
+	table.admin thead td:first-child { border-left: 1px solid #bebebe }
+	table.admin tbody tr:hover { background-color: #f5f7f8 }
+	table.admin tbody a:hover { text-decoration: none }
+	table.admin tbody td { padding: 6px 8px 5px; border-left: 1px solid #ddd; border-bottom: 1px solid #ccc; vertical-align: top; line-height: 120% }
+	table.admin tfoot td { padding: 5px 8px 4px; margin-top: 10px; background-color: #f3f3f3; border-left: 1px solid #ddd; border-bottom: 1px solid #aaa; vertical-align: middle; font-size: 10px; line-height: 100% }
+	table.admin td { background: url(../img/layout/dotw.gif) repeat-x 0 0 }
+
+	table.admin thead td.ASC { background: #e5e5e5 url(../img/icons/16x16/arrow-090-small.png) no-repeat 100% 50% }
+	table.admin thead td.DESC { background: #e5e5e5 url(../img/icons/16x16/arrow-270-small.png) no-repeat 100% 50% }
+
+	table.admin td.text span { display: block; font-size: 10px; color: #aaa; }
+	table.admin td.text span.right { float: right }
+	table.admin td.text span em { color: #0C63A4 }
+	table.admin td.status { text-align: center }
+	table.admin td.name { width: 12% }
+	table.admin td.date { width: 12%; font-size: 10px }
+	table.admin td.button { width: 33px; text-align: center; vertical-align: middle }
+	table.admin td.button img { padding: 0; margin: 0 }
+
+/**
+ * messages
+ *
+ */
+
+p.message {
+	width: 93%;
+	padding: 5px 29px 5px 5px;
+	margin: 10px;
+	background: #E8F2FF url(../img/icons/accept_blue.png) no-repeat 99% 50%;
+	border: 1px solid #ADC7E9;
+}
+
+/**
+ * ui widgets
+ *
+ */
+
+input.toggler { width: auto }
+a.btn { display: block; padding: 4px 5px; color: #217410; text-decoration: none; background-color: #E9FFE5; border: 1px solid #C2F9B7; -moz-border-radius: 6px; -webkit-border-radius: 6px }
+	a.btn img { float: none; vertical-align: middle; padding: 0; margin: 0 0 1px }
+	a.btn:hover { background-color: #559349; border: 1px solid #E9FFE5; color: #fff }
+	a.btn.blue { background-color: #E5F7FF; border: 1px solid #B7DEF9; color: #5b829d }
+	a.btn.blue:hover { background-color: #6b9db3; border: 1px solid #E5F7FF; color: #fff }
+	a.btn.yellow { background-color: #feffe5; border: 1px solid #f9f7b7; color: #695510 }
+	a.btn.yellow:hover { background-color: #f9f7b7; border: 1px solid #feffe5; color: #333 }
+	a.btn.purple { background-color: #EEE5FF; border: 1px solid #D8C6FD; color: #695510 }
+	a.btn.purple:hover { background-color: #9A70EF; border: 1px solid #EEE5FF; color: #fff }
+
+p.pagecontrols { float: right; padding: 0; margin: 0 }
+p.pagecontrols a.btn { float: right; margin-left: 10px }
+
+p.pagination { clear: both; text-align: right; padding: 15px 0 0 0; color: #aaa }
+p.pagination strong { padding: 3px; background-color: #559349; border: 1px solid #7DD46B; color: #fff; -moz-border-radius: 2px; -webkit-border-radius: 2px }
+p.pagination a { color: #217410; padding: 3px; text-decoration: none; background-color: #E9FFE5; border: 1px solid #C2F9B7; -moz-border-radius: 2px; -webkit-border-radius: 2px }
+p.pagination a:hover { background-color: #559349; border: 1px solid #7DD46B; color: #fff }
+
+span.cke_skin_kama { float: left; margin-bottom: 10px }
+div.cke_skin_kama label { float: none }
+
+ul { margin: 0; padding: 0 }
+ul li { margin: 0; padding: 0 }
+
+ul.list { margin: 0 0 10px }
+ul.list li { margin: 5px 0; line-height: 15px }
+ul.list li span { font-style: italics; color: #bbb }
+span.tag { padding: 0 3px; color: #777; font-size: 10px; font-style: normal;
+			 font-family: Trebuchet MS; text-transform: uppercase }
+span.tag.pending { background-color: #E5F7FF }
+span.tag.approved { background-color: #EFFFEC }
+span.tag.spam { background-color: red; color: #fff }
+span.tag.rss { background-color: #FAD7AF }
+
+form div.line select.multiselect { width: 500px; height: 200px }
+.ui-multiselect { float: left }
+
+/* uploadify */
+form div.upload-image { float: left }
+form div.upload-image div.queue { clear: both }
+form div.upload-image div.image { float: left; background-color: #f3f3f3; border: 1px solid #cbcbcb; padding: 9px; margin: 0 5px 0 0 }
+form div.upload-image div.image img { border: 1px solid #cbcbcb }
+
+/**
+ * misc
+ *
+ */
+
+a.toggleLang { margin-left: 10px }
+
+.hide { visibility: hidden }
+.box { padding: 2em; background: #98cc2b; border: 1px solid #569f09; background: #f5f5f5 url(../img/layout/admin_box_bg.gif) repeat-x 0 0 }
+

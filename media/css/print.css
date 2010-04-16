@@ -1,0 +1,10 @@
+/**
+  *	pillsguide.com (c) 2010 all rights reserved,
+  * by: atraxia.co.il
+**/
+
+/* PRINT LAYOUT --------------------------------------------------- */
+
+#header, #nav, #footer, #panel, div.box div.foot { display: none }
+
+/* END ____________________________________________________________ */
